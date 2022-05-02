@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+    background: #333;
+
+}
+header a{
+    color: #fff;
+}
+header .logo{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 10PX;
+}
+header .logo span{
+    color: crimson;
+}
+header .navbar a{
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 0 20px;
+}
+header .navbar a:hover{
+    color: crimson;
+    transition: all ease 0.2s;
+}
+header .navbar .active{
+    position: relative;
+}
+header .navbar .active::after{
+    position: absolute;
+    content: '';
+    background: crimson;
+    width: 25px;
+    height: 2px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+
+/* -------------------footer----------------- */
+/* footer{
+    background: url(../images/footer-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .box-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .box-container .box h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+footer .box-container .box a{
+  text-transform: capitalize;
+  color: #fff;
+  display: block;
+} */
+
+
+.home-packages .heading-title{
+    color: crimson;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+.home-packages .heading-title::after{
+    position: absolute;
+    content: '';
+    background: crimson;
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+ 
+ .home-packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin: 0 70px;
+ }
+ 
+ .home-packages .box-container .box{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+ }
+ 
+ .home-packages .box-container .box:hover .image img{
+    transform: scale(1.1);
+ }
+ 
+ .home-packages .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+ }
+ 
+ .home-packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+ }
+ 
+ .home-packages .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+ }
+ 
+ .home-packages .box-container .box .content h3{
+    font-size: 2.2rem;
+    color: #333;
+ }
+ 
+ .home-packages .box-container .box .content p{
+    font-size: 1.4rem;
+    color: rgb(92, 88, 88);
+    line-height: 1.5;
+    padding:1rem 0;
+    margin-bottom: 25px;
+ }
+ 
+ .home-packages .load-more{
+    text-align: center;
+    margin-top: 2rem;
+ }
+ .home-packages .box-container .box .content .btn{
+     background-color: crimson;
+     color: #fff;
+     padding: 15px 22px;
+     text-transform: capitalize;
+     font-size: 18px;
+     border-radius: 5px;
+     font-weight: 700;
+ }
+ .home-packages .box-container .box .content .btn:hover{
+     border: 1px solid crimson;
+     color: #000;
+     background-color: transparent;
+     font-weight: 600;
+
+ }
+
+ .content{
+     background-color: aliceblue;
+ }
+.content h3{
+    font-size: 20px;
+    font-weight: 600;
+}
