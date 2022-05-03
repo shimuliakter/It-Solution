@@ -36,10 +36,10 @@ header .navbar a:hover{
     color: crimson;
     transition: all ease 0.2s;
 }
-header .navbar .active{
+.active{
     position: relative;
 }
-header .navbar .active::after{
+.active::after{
     position: absolute;
     content: '';
     background: crimson;
@@ -50,30 +50,7 @@ header .navbar .active::after{
     transform: translateX(-50%);
     bottom: -8px;
 }
-
-/* -------------------footer----------------- */
-/* footer{
-    background: url(../images/footer-img.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-footer .box-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-footer .box-container .box h3{
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-footer .box-container .box a{
-  text-transform: capitalize;
-  color: #fff;
-  display: block;
-} */
-
+/* --------------------gallery---------------------- */
 .gallery{
     padding: 0 40px;
 }
@@ -159,7 +136,44 @@ footer .box-container .box a{
      color: #000;
      background-color: transparent;
      font-weight: 600;
-
  }
- 
+ /* -------------------footer----------------- */
+footer{
+    background: url(../images/footer-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10rem;
+}
+footer .box-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .box-container .box h3{
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+footer .box-container .box a{
+  text-transform: capitalize;
+   display: block;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #cbc6c6;
+  margin-bottom: 20px;
+}
+footer .box-container .box a:hover{
+    color: #fff;
+}
+footer .box-container .box i{
+    color: #fff;
+    font-size: 20px;
+}
+footer .box-container .box i:hover{
+    color: crimson;
+}
+
 
