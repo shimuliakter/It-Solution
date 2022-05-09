@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 50px;
+    padding: 22px 50px;
     background: #333;
 }
 header a{
@@ -50,7 +50,74 @@ header .navbar a:hover{
     transform: translateX(-50%);
     bottom: -8px;
 }
-/* --------------------gallery---------------------- */
+
+/* ----------------------home starts--------------------- */
+.section-top{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change_img 10s infinite ease-in-out;
+}
+.first_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.first_content h1{
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.first_content h1 span{
+    font-size: 60px;
+    color: crimson;
+}
+.first_content a{
+    display: inline-block;
+    padding: 12px 30px;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-left: 82px;
+}
+.first_content a:hover{
+    background: transparent;
+    border: 1px solid crimson;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+@keyframes change_img {
+    0%{
+        background-image: url(../images/one.jpg);
+    }
+    20%{
+        background-image: url(../images/two.jpg);
+    }
+    40%{
+        background-image: url(../images/three.jpg);
+    }
+    60%{
+        background-image: url(../images/four.jpg);
+    }
+    80%{
+        background-image: url(../images/five.jpg);
+    }
+    100%{
+        background-image: url(../images/one.jpg);
+    }
+}
+/* ----------------------home ends--------------------- */
+
+/* --------------------gallery starts---------------------- */
 .gallery{
     padding: 0 40px;
 }
@@ -117,11 +184,6 @@ header .navbar a:hover{
     padding: 1rem 0;
     margin-bottom: 25px;
  }
- 
- .gallery .load-more{
-    text-align: center;
-    margin-top: 2rem;
- }
  .gallery .box-container .box .content .btn{
      background-color: crimson;
      color: #fff;
@@ -137,7 +199,9 @@ header .navbar a:hover{
      background-color: transparent;
      font-weight: 600;
  }
- /* -------------------footer----------------- */
+ /* --------------------gallery ends---------------------- */
+
+ /* -------------------footer starts----------------- */
 footer{
     background: url(../images/footer-img.jpg) no-repeat;
     background-size: cover;
@@ -175,5 +239,6 @@ footer .box-container .box i{
 footer .box-container .box i:hover{
     color: crimson;
 }
+ /* -------------------footer ends----------------- */
 
 
