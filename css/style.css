@@ -24,7 +24,9 @@ header .logo{
     font-weight: 600;
     padding: 0 10PX;
 }
-header .logo span{
+header .logo .header_logo{
+    font-size: 30px;
+    font-weight: 600;
     color: crimson;
 }
 header .navbar a{
@@ -52,69 +54,7 @@ header .navbar a:hover{
 }
 
 /* ----------------------home starts--------------------- */
-.section-top{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 80vh;
-    background-image: url(../images/one.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: change_img 10s infinite ease-in-out;
-}
-.first_content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.first_content h1{
-    font-size: 70px;
-    color: #fff;
-    letter-spacing: 1px;
-}
-.first_content h1 span{
-    font-size: 60px;
-    color: crimson;
-}
-.first_content a{
-    display: inline-block;
-    padding: 12px 30px;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 12px;
-    font-weight: 500;
-    margin-left: 82px;
-}
-.first_content a:hover{
-    background: transparent;
-    border: 1px solid crimson;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-}
-@keyframes change_img {
-    0%{
-        background-image: url(../images/one.jpg);
-    }
-    20%{
-        background-image: url(../images/two.jpg);
-    }
-    40%{
-        background-image: url(../images/three.jpg);
-    }
-    60%{
-        background-image: url(../images/four.jpg);
-    }
-    80%{
-        background-image: url(../images/five.jpg);
-    }
-    100%{
-        background-image: url(../images/one.jpg);
-    }
-}
+
 /* ----------------------home ends--------------------- */
 
 /* --------------------gallery starts---------------------- */
@@ -201,6 +141,71 @@ header .navbar a:hover{
  }
  /* --------------------gallery ends---------------------- */
 
+ /* ---------------------main gallery starts----------------- */
+ .main-gallery .main-heading{
+    width: 50%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+ }
+ .main-gallery .main-heading h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-bottom: 3px solid #e2dcdc;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+ }
+ .main-gallery .main-heading h1 span{
+     font-weight: 100;
+ }
+ .main-gallery .main-container{
+     margin-top: 30px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2.5rem;
+     padding: 0 6rem;
+ }
+ .main-gallery .main-container .main-box{
+     position: relative;
+     overflow: hidden;
+     height: 25rem;
+     border: 1rem solid #fff;
+     border-radius: .5rem;
+     box-shadow: 0 1rem 2rem rgba(148, 147, 147, 0.1);
+     flex: 1 1 30rem;
+ }
+ .main-gallery .main-container .main-box img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ .main-gallery .main-container .main-box .main-content{
+     position: absolute;
+     top: -100%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     background: rgba(0, 0, 0, 0.7);
+     padding: 2rem;
+     padding-top: 7rem;
+ }
+ .main-gallery .main-container .main-box:hover .main-content{
+     top: 0;
+ }
+ .main-gallery .main-container .main-box h3{
+     font-size: 2.5rem;
+     color: #fff;
+ }
+ .main-gallery .main-container .main-box p{
+     font-size: 1rem;
+     color: #e9dede;
+     padding: 0.5px 0;
+
+ }
+/* ---------------------main gallery ends----------------- */
+
  /* -------------------footer starts----------------- */
 footer{
     background: url(../images/footer-img.jpg) no-repeat;
@@ -222,7 +227,7 @@ footer .box-container .box h3{
     margin-bottom: 30px;
 }
 footer .box-container .box a{
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
    display: block;
   font-size: 1rem;
   line-height: 1.8rem;
@@ -231,6 +236,7 @@ footer .box-container .box a{
 }
 footer .box-container .box a:hover{
     color: #fff;
+    text-decoration: underline;
 }
 footer .box-container .box i{
     color: #fff;
