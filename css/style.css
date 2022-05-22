@@ -106,7 +106,7 @@ header .navbar a:hover{
     background-color: aliceblue;
  }
  .gallery .box-container .box .content{
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
  }
  
@@ -130,7 +130,7 @@ header .navbar a:hover{
      padding: 17px 24px;
      text-transform: capitalize;
      font-size: 18px;
-     border-radius: 5px;
+     border-radius: 0.5rem;
      font-weight: 700;
  }
  .gallery .box-container .box .content .btn:hover{
@@ -140,6 +140,66 @@ header .navbar a:hover{
      font-weight: 600;
  }
  /* --------------------gallery ends---------------------- */
+
+
+/* --------------------new pc section starts------------------ */
+ .pc-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5rem;
+     margin-top: 5rem;
+     flex-wrap: wrap;
+     padding: 0 40px;
+     border-radius: .5rem;
+ }
+ .pc-container .pc-box{
+    background: #ffffff;
+    /* border: 2px solid #ccc; */
+    border-radius: .5rem;
+    margin: 20px;
+    width: 22%;
+ }
+ .pc-container .pc-box .pc-item-img{
+     padding: 10px;
+     background: #ccc;
+     text-align: center;
+ }
+ .pc-container .pc-box .pc-item-img img{
+     width: 250px;
+     height: 220px;
+     object-fit: cover;
+     filter: drop-shadow(0 3px 5px rgba(0,0,0,.7));
+ }
+ .pc-details h3{
+     padding: 12px;
+     font-size: 22px;
+     margin-top: 8px;
+ }
+ .pc-details .pc-short-description ul{
+    display: block;
+    list-style-type: disc;
+    padding: 30px;
+    margin-top: -25px
+ }
+ .pc-details .pc-short-description li{
+     font-size: 14px;
+     color: #666;
+     padding: 4px;
+ }
+ .pc-details .pc-item-price hr{
+     margin: 0 auto;
+     width: 80%;
+     margin-bottom: 10px;
+ }
+ .pc-details .pc-item-price{
+     color: crimson;
+     font-size: 22px;
+     font-weight: 600;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+/* --------------------new pc section starts------------------ */
 
  /* ---------------------main gallery starts----------------- */
  .main-gallery .main-heading{
