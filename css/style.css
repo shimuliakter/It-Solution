@@ -143,7 +143,7 @@ header .navbar a:hover{
 
 
 /* --------------------new pc section starts------------------ */
- .pc-container{
+ .product-container{
      display: flex;
      align-items: center;
      justify-content: center;
@@ -153,51 +153,51 @@ header .navbar a:hover{
      padding: 0 40px;
      border-radius: .5rem;
  }
- .pc-container .pc-box{
+ .product-container .product-box{
     background: #ffffff;
     /* border: 2px solid #ccc; */
     border-radius: .5rem;
     margin: 20px;
     width: 22%;
  }
- .pc-container .pc-box .pc-item-img{
+ .product-container .product-box .product-item-img{
      padding: 10px;
      background: #ccc;
      text-align: center;
  }
- .pc-container .pc-box .pc-item-img img{
+ .product-container .product-box .product-item-img img{
      width: 250px;
      height: 220px;
      object-fit: cover;
      filter: drop-shadow(0 3px 5px rgba(0,0,0,.7));
  }
- .pc-details h3{
+ .details h3{
      padding: 12px;
      font-size: 22px;
      margin-top: 8px;
  }
- .pc-details .pc-short-description ul{
+ .details .short-description ul{
     display: block;
     list-style-type: disc;
     padding: 30px;
     margin-top: -25px
  }
- .pc-details .pc-short-description li .span-text{
+ .details .short-description li .span-text{
      /* font-size: 14px; */
      /* color: #333; */
      font-weight: 600;
  }
- .pc-details .pc-short-description li{
+ .details .short-description li{
      font-size: 14px;
      color: #666;
      padding: 4px;
  }
- .pc-details .pc-item-price hr{
+ .details .product-item-price hr{
      margin: 0 auto;
      width: 80%;
      margin-bottom: 10px;
  }
- .pc-details .pc-item-price{
+ .details .product-item-price{
      color: crimson;
      font-size: 22px;
      font-weight: 600;
