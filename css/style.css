@@ -292,8 +292,7 @@ footer .box-container .box h3{
     margin-bottom: 30px;
 }
 footer .box-container .box a{
-  /* text-transform: capitalize; */
-   display: block;
+  display: block;
   font-size: 1rem;
   line-height: 1.8rem;
   color: #cbc6c6;
@@ -302,6 +301,17 @@ footer .box-container .box a{
 footer .box-container .box a:hover{
     color: #fff;
     text-decoration: underline;
+}
+footer .box-container .box p{
+  display: block;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #cbc6c6;
+  margin-bottom: 20px;
+}
+footer .box-container .box p:hover{
+    color: #fff;
+    /* text-decoration: underline; */
 }
 footer .box-container .box i{
     color: #fff;
