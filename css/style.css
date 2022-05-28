@@ -164,12 +164,16 @@ header .navbar a:hover{
      padding: 10px;
      background: #ccc;
      text-align: center;
+     height: 250px;
  }
  .product-container .product-box .product-item-img img{
      width: 250px;
      height: 220px;
      object-fit: cover;
      filter: drop-shadow(0 3px 5px rgba(0,0,0,.7));
+ }
+ .more-details .short-description{
+     height: 290px;
  }
  .details h3{
      padding: 12px;
@@ -186,6 +190,12 @@ header .navbar a:hover{
      /* font-size: 14px; */
      /* color: #333; */
      font-weight: 600;
+ }
+ .details .short-description h2{
+    font-size: 16px;
+    color: #666;
+    margin-left: 10px;
+
  }
  .details .short-description li{
      font-size: 14px;
