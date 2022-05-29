@@ -175,6 +175,9 @@ header .navbar a:hover{
  .more-details .short-description{
      height: 290px;
  }
+ .extra-details .short-description{
+    height: 220px;
+ }
  .details h3{
      padding: 12px;
      font-size: 22px;
