@@ -369,6 +369,64 @@ header .navbar a:hover{
 }
 /* pc service gallery ends */
 
+/* networking gallery starts */
+.networking-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px 0 20px;
+} 
+.networking-section .N-img-box{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.networking-section .N-img-box .N-img{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.networking-section .N-img-box .N-img img{
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.networking-heading h1{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    margin: 40px 0;
+    margin-bottom: 70px;
+}
+.networking-heading h1::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background: crimson;
+    border-radius: 10px;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 150px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+        width: 150px;
+    }
+    
+}
+/* networking gallery endts */
 
  /* -------------------footer starts----------------- */
 footer{
