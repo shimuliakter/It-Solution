@@ -53,7 +53,82 @@ header .navbar a:hover{
     bottom: -8px;
 }
 
-/* --------------------gallery starts---------------------- */
+/* home section starts */
+.home-container{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(69, 68, 68, 0.732),rgba(69, 68, 68, 0.7)),url(../images/home-bg.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.home-section{
+    display: flex;
+    align-items: center;
+    height: 88%;
+    padding-left: 180px;
+}
+.home-section .home-col{
+    flex-basis: 50%;
+}
+.home-section .home-col .home-margin{
+    margin-top: 60px;
+}
+.home-section .home-col h1{
+    color: #fff;
+    font-size: 60px;
+}
+.home-section .home-col p{
+    color: rgb(238, 234, 234);
+    font-size: 16px;
+    line-height: 20px;
+}
+.home-section .home-col button{
+    width: 180px;
+    color: #fff;
+    background: crimson;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+.home-section .home-col button:hover{
+    color: crimson;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.home-card{
+    display: inline-block;
+    width: 280px;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: -5px 40px;
+    transition: 0.5s;
+}
+.home-card:hover{
+    transform: translateY(-15px);
+}
+.home-card-1{
+    background-image: url(../images/home-pc.png);
+}
+.home-card-2{
+    background-image: url(../images/home-motherboard.png);
+}
+.home-card-3{
+    background-image: url(../images/home-cctv-1.png);
+}
+.home-card-4{
+    background-image: url(../images/home-printer.png);
+}
+/* home section ends */
+
+/* gallery starts */
 .gallery{
     padding: 0 40px;
 }
@@ -135,10 +210,10 @@ header .navbar a:hover{
      background-color: transparent;
      font-weight: 600;
  }
- /* --------------------gallery ends---------------------- */
+ /* gallery ends */
 
 
-/* --------------------new pc section starts------------------ */
+/* new pc section starts */
  .product-container{
      display: flex;
      align-items: center;
@@ -210,7 +285,7 @@ header .navbar a:hover{
      text-align: center;
      margin-bottom: 20px;
  }
-/* --------------------new pc section starts------------------ */
+/* new pc section starts */
 
 /* product menu bar starts */
 .menu-bar{
@@ -261,7 +336,7 @@ header .navbar a:hover{
 }
 /* product menu bar ends */
 
- /* ---------------------main gallery starts----------------- */
+ /* main gallery starts */
  .main-gallery .main-heading{
     width: 50%;
     padding-bottom: 50px;
@@ -324,7 +399,7 @@ header .navbar a:hover{
      padding: 0.5px 0;
 
  }
-/* ---------------------main gallery ends----------------- */
+/* main gallery ends */
 .pc-service-img-gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -389,7 +464,7 @@ header .navbar a:hover{
 }
 .networking-section .N-img-box .N-img img{
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     border-radius: 5px;
 }
 .networking-heading h1{
@@ -424,11 +499,11 @@ header .navbar a:hover{
     100%{
         width: 150px;
     }
-    
 }
+
 /* networking gallery endts */
 
- /* -------------------footer starts----------------- */
+ /* footer section starts */
 footer{
     background: url(../images/footer-img.jpg) no-repeat;
     background-size: cover;
@@ -476,6 +551,6 @@ footer .box-container .box i{
 footer .box-container .box i:hover{
     color: crimson;
 }
- /* -------------------footer ends----------------- */
+ /* footer section ends */
 
 
