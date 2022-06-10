@@ -56,7 +56,7 @@ header .navbar a:hover{
 /* home section starts */
 .home-container{
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     background-image: linear-gradient(rgba(69, 68, 68, 0.732),rgba(69, 68, 68, 0.7)),url(../images/home-bg.jpg);
     background-position: center;
     background-size: contain;
@@ -67,22 +67,35 @@ header .navbar a:hover{
     height: 88%;
     padding-left: 180px;
 }
-.home-section .home-col{
-    flex-basis: 50%;
+.home-section .content-space{
+    margin-top: 5%;
+    max-width: 600px;
 }
+/* .home-section .home-col{
+    flex-basis: 50%;
+} */
 .home-section .home-col .home-margin{
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.home-section .home-col .extra-space{
+    margin-top: 100px;
+}
+.home-section .home-col .min-space{
+    margin-bottom: 20px;
 }
 .home-section .home-col h1{
     color: #fff;
-    font-size: 60px;
+    font-size: 70px;
 }
 .home-section .home-col p{
-    color: rgb(238, 234, 234);
+    color: #eeeaea;
     font-size: 16px;
     line-height: 20px;
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
 }
-.home-section .home-col button{
+/* .home-section .home-col button{
     width: 180px;
     color: #fff;
     background: crimson;
@@ -99,11 +112,28 @@ header .navbar a:hover{
     background: #fff;
     font-size: 16px;
     font-weight: 600;
+} */
+.home-section .home-col .home-btn{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 18px 60px;
+    background-image:linear-gradient(45deg, #dc143c, #3cbef1);
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.4s;
+    animation-delay: 1s;
+}
+.home-section .home-col .home-btn:hover{
+    background-image: linear-gradient(45deg, #3cbef1, #dc143c);
+    /* border-radius: 30px; */
+    border-top-right-radius: 30px;
 }
 .home-card{
     display: inline-block;
-    width: 280px;
-    height: 310px;
+    width: 200px;
+    height: 220px;
     background-position: center;
     background-size: cover;
     padding: 15px 25px;
@@ -112,7 +142,7 @@ header .navbar a:hover{
     transition: 0.5s;
 }
 .home-card:hover{
-    transform: translateY(-15px);
+    transform: translateY(-10px);
 }
 .home-card-1{
     background-image: url(../images/home-pc.png);
@@ -125,6 +155,23 @@ header .navbar a:hover{
 }
 .home-card-4{
     background-image: url(../images/home-printer.png);
+}
+.home-card-5{
+    background-image: url(../images/home-processor-1.png);
+}
+.home-card-6{
+    background-image: url(../images/home-ip-cctv.png);
+}
+.animation{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: movetext 0.5s linear forwards;
+}
+@keyframes movetext{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 /* home section ends */
 
@@ -139,6 +186,7 @@ header .navbar a:hover{
     text-align: center;
     margin: 30px 0;
     position: relative;
+    margin-bottom: 40px;
 }
 .gallery .heading-title::after{
     position: absolute;
