@@ -56,7 +56,7 @@ header .navbar a:hover{
 /* home section starts */
 .home-container{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-image: linear-gradient(rgba(69, 68, 68, 0.732),rgba(69, 68, 68, 0.7)),url(../images/home-bg.jpg);
     background-position: center;
     background-size: contain;
@@ -76,7 +76,7 @@ header .navbar a:hover{
 } */
 .home-section .home-col .home-margin{
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 80px;
 }
 .home-section .home-col .extra-space{
     margin-top: 100px;
@@ -137,7 +137,7 @@ header .navbar a:hover{
     background-position: center;
     background-size: cover;
     padding: 15px 25px;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin: -5px 40px;
     transition: 0.5s;
 }
@@ -179,7 +179,7 @@ header .navbar a:hover{
 .gallery{
     padding: 0 40px;
 }
-.gallery .heading-title{
+.heading-title{
     color: crimson;
     font-size: 40px;
     font-weight: 600;
@@ -188,7 +188,7 @@ header .navbar a:hover{
     position: relative;
     margin-bottom: 40px;
 }
-.gallery .heading-title::after{
+.heading-title::after{
     position: absolute;
     content: '';
     background: crimson;
@@ -204,6 +204,7 @@ header .navbar a:hover{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3.5rem;
     margin: 0 70px;
+    margin-top: 50px;
  }
  
 .gallery .box-container .box:hover .image img{
@@ -550,6 +551,63 @@ header .navbar a:hover{
 }
 
 /* networking gallery endts */
+
+/* service section starts */
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9rem;
+}
+.service-space{
+    width: 30%;
+    padding: 10px 15px;
+    text-align: center;
+}
+.service-box{
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #6a5acd 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px rgba(253, 180, 35, 0.7);
+    transition: 0.5s;
+}
+.service-content h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin: 15px 0;
+}
+.service-content p{
+    font-size: 16px;
+    color: #575a7b;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+.service-icon a{
+    position: relative;
+    color: #000;
+    margin: auto;
+    font-size: 50px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.service-box:hover{
+    background-position: 0 100% ;
+}
+.service-box:hover .service-icon a{
+    color: #5ee3fe;
+}
+.service-box:hover .service-content h3{
+    color: #ffffff
+}
+.service-box:hover .service-content p{
+    color: #f0f0f0;
+}
+/* service section endts */
 
  /* footer section starts */
 footer{
